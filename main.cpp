@@ -4,58 +4,9 @@
 
 int main()
 {
-    /*
-    enrutador router;
-    int a;
-    char name;
-    while (true) {
-        cout << "1 Agregar enlace" << endl;
-        cout << "2 Eliminar enlace" << endl;
-        cout << "3 Modificar enlace" << endl;
-        cout << "4 Imprimir todo" << endl;
-        cout << "Ingrese una opcion: "; cin >> a;
-
-        switch (a)
-        {
-            case 1:
-                cout << "Ingrese nombre y costo del enlace: ";
-                cin >> name >> a;
-                if (!router.agregar_enlace(name,a))
-                {
-                    cout << "Error al agragar el enlace, el enlace ya existe." << endl;
-                }
-            break;
-
-            case 2:
-                cout<< "Ingrese nombre del enlace para eliminar: ";
-                cin >>name;
-                if (!router.eliminar_enlace(name))
-                {
-                    cout << "Error al eliminar el enlace, el enlace no existe." << endl;
-                }
-            break;
-
-            case 3:
-                cout<< "Ingrese nombre del enlace y costro para modificarlo: ";
-                cin >> name >> a;
-                if (!router.modificar_enlace(name,a))
-                {
-                    cout << "Error al modificar el enlace, el enlace no existe." << endl;
-                }
-            break;
-
-            case 4:
-                router.imprimir();
-            break;
-
-            default:
-
-                cout<<" opcion incorrecta";
-        }
-    }
-    */
 
     red net;
+    leer_archivo(net);
     int a;
     char name;
     while(true)
@@ -66,7 +17,6 @@ int main()
         cout<<"4 Modificar enlace"<<endl;
         cout<<"5 Imprimir enrutador "<<endl;
         cout<<"6 Imprimir red completa "<<endl;
-        cout<<"7 leer archivo para red topografica "<<endl;
         cin>>a;
         switch(a)
         {
@@ -113,12 +63,8 @@ int main()
                 net.imprimir_todo();
             break;
 
-            case 7:
-                net.leer_archivo();
-            break;
-
             default:
-
+                cout<<"Opcion incorrecta"<<endl;
             break;
         }
     }

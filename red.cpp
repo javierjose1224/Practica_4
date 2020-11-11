@@ -127,6 +127,14 @@ void red::eliminar_enlace_red(char nombre)
     }
 }
 
+void red::agregar_ruta(char nombre, char ruta, int costo)
+{
+    enrutador router;
+    router.agregar_enlace(ruta,costo);
+    net.insert(pair<char,enrutador>(nombre,router));
+    net[ruta].agregar_enlace(nombre,costo);
+}
+
 void red::imprimir_todo()
 {
     for (it=net.begin();it!=net.end();it++)
@@ -160,22 +168,7 @@ bool red::imprimir_enrutador(char nombre)
 
 void red::leer_archivo()
 {
-    ifstream archivo("red.txt");
-    if(!archivo.is_open())
-    {
-        cout<<"El archivo no existe "<<endl;
-    }
-    else
-    {
-        char letra;
-        while(!archivo.eof())
-        {
-            letra=archivo.get();
-            cout<<letra;
-        }
-    }
-    archivo.close();
-    cout<<endl;
+
 }
 
 

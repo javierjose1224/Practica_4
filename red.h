@@ -10,6 +10,7 @@ public:
     void modificar_enlace_red(char nombre);
     void eliminar_enrutador(char nombre);
     void eliminar_enlace_red(char nombre);
+    void agregar_ruta(char nombre, char ruta, int costo);
     void imprimir_todo();
     bool imprimir_enrutador(char nombre);
     void leer_archivo();
