@@ -5,8 +5,10 @@
 int main()
 {
 
+    red net_lect;
     red net;
-    leer_archivo(net);
+
+    net=leer_archivo(net_lect);
     int a;
     char name;
     while(true)

@@ -166,10 +166,6 @@ bool red::imprimir_enrutador(char nombre)
     return ver;
 }
 
-void red::leer_archivo()
-{
-
-}
 
 
 

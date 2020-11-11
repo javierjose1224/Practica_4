@@ -13,7 +13,6 @@ public:
     void agregar_ruta(char nombre, char ruta, int costo);
     void imprimir_todo();
     bool imprimir_enrutador(char nombre);
-    void leer_archivo();
 private:
     map<char,enrutador> net;
     map<char,enrutador>::iterator it;
