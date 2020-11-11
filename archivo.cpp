@@ -47,7 +47,7 @@ red leer_archivo(red net)
         //cout<<nombre<<" "<<valor<<" "<<numero_int<<endl;
         net.agregar_ruta(nombre,valor,numero_int);
     }
-    net.imprimir_todo();
+    //net.imprimir_todo();
     return net;
 }
 
