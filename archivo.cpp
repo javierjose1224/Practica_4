@@ -43,24 +43,12 @@ red leer_archivo(red net)
                 mul*=10;
             }
         }
-
         //cout<<nombre<<" "<<valor<<" "<<numero_int<<endl;
         net.agregar_ruta(nombre,valor,numero_int);
     }
     //net.imprimir_todo();
     return net;
 }
-
-
-/*
-int valor=0,mul=1,dig=0;
-for (int o=monto.length()-1;o>=0;o--) {
-    valor+=(int(monto[o])-48)mul;
-    dig++;
-    mul=10;
-}
-   */
-
 
 
 

@@ -4,8 +4,6 @@
 
 int main()
 {
-
-
     int opcion;
     while(true)
     {
@@ -161,7 +159,6 @@ int main()
             break;
         }
     }
-
 
     return 0;
 }
